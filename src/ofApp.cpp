@@ -9,11 +9,26 @@ void ofApp::drawCircle(float x, float y, float diam){
     diam= diam*.7;
     if (diam>5) {
         drawCircle(x, y, diam);
+    
     }
 }
 
+void ofApp::drawRectangle(float x, float y){
+    
+    r = ofRandom(0,255);
+    g = ofRandom (0,255);
+    b = ofRandom (0,255);
+    ofSetColor(0, 200, 200);
+    ofNoFill();
+
+    ofDrawRectangle(x, y, 200,200,200);
+    
+}
+
+
+
 void ofApp::setup(){
-    ofBackground(0); 
+    ofBackground(0);
 }
 
 //--------------------------------------------------------------
@@ -25,6 +40,8 @@ void ofApp::update(){
 void ofApp::draw(){
     ofNoFill();
     drawCircle(ofGetWidth()/2, ofGetHeight()/2, 300);
+    drawRectangle(ofGetWidth()/2-100, ofGetHeight()/2-100);
+
 }
 
 //--------------------------------------------------------------
