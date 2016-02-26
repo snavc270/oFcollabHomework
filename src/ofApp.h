@@ -22,5 +22,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     void drawCircle(float x, float y, float diam);
-		
+    void drawRectangle (float x, float y);
+    int r, g, b;
+
 };
