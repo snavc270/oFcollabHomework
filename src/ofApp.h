@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Han.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -22,5 +23,12 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     void drawCircle(float x, float y, float diam);
+    
+    
+    
+    
+    
+    Hanhan lee;
+   
 		
 };

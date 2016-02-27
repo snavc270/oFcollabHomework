@@ -13,18 +13,23 @@ void ofApp::drawCircle(float x, float y, float diam){
 }
 
 void ofApp::setup(){
-    ofBackground(0); 
+    ofBackground(0);
+    
+     lee.setup();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    lee.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofNoFill();
     drawCircle(ofGetWidth()/2, ofGetHeight()/2, 300);
+    
+    
+     lee.draw();
 }
 
 //--------------------------------------------------------------
