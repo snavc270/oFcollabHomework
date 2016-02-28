@@ -29,11 +29,16 @@ void ofApp::drawRectangle(float x, float y){
 
 void ofApp::setup(){
     ofBackground(0);
+    
+    
+    lee.setup();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 
+    
+    lee.update();
 }
 
 //--------------------------------------------------------------
@@ -41,6 +46,9 @@ void ofApp::draw(){
     ofNoFill();
     drawCircle(ofGetWidth()/2, ofGetHeight()/2, 300);
     drawRectangle(ofGetWidth()/2-100, ofGetHeight()/2-100);
+    
+    
+    lee.draw();
 
 }
 
